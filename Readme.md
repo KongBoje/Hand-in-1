@@ -626,6 +626,6 @@ Here is a clear example on how to inherit from another class.<br />
 In my opinion it looks really similar to how you inherit in java, aka. the extends parents class.<br />
 
 ## Provide examples with es6, running in a browser, using Babel and Webpack
-- Svaret på denne opgave kan ses i angular-webpack mappen.
+- Svaret på denne opgave kan ses i src mappen hvilket er angular-webpack opgaven.
 
 
