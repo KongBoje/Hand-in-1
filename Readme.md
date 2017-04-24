@@ -1,7 +1,7 @@
 # Hand-in 1, JavaScript.
 
 # Explain and Reflect
-## Explain differences between Java vs JavaScript
+>## Explain differences between Java vs JavaScript
 #### Key differences
 - Java is an OOP programming language while Java Script is a scripting language.
 
@@ -23,7 +23,7 @@ Both of the languages have their constructors with a capital letter.
 - Java uses block-based scoping; JavaScript uses function-based scoping like callbacks.
 - Java has an implicit this scope for non-static methods, and implicit class scope; JavaScript has implicit global scope.
 
-## Explain the two strategies for improving JavaScript: ES6 (es2015) + ES7, versus Typescript.
+>## Explain the two strategies for improving JavaScript: ES6 (es2015) + ES7, versus Typescript.
 ### JavaScript: ES6(es2015) + ES7:
 - The natural evolution of JavaScript, bringing features like arrow functions, Classes and Inheritance, promises, Generators and much more.
 
@@ -44,7 +44,7 @@ Babel is a essentially an ECMAScript 6 to ECMAScript 5 compiler. It allows you t
 
 - Angular 2 is designed to be written with TypeScript (but can also be used with ES 5 and es 2015)
 
-## Explain generally about node.js and NPM.
+>## Explain generally about node.js and NPM.
 ### Node.js:
 Node.js is an event based, asynchronous I/O server side platform that runs on Google's V8 JavaScript Engine for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
 
@@ -75,7 +75,7 @@ Node.js is an event based, asynchronous I/O server side platform that runs on Go
 ### NPM
 NPM is a package manager for Node.js with hundreds of thousands of packages, which you can include in your Node.js based projects. Using NPM can really speed up the process when building applications in Node.js. NPM allows Node.js to be lightweight, because you only include the features that you need, thus avoiding a bloated server side platform.
 
-## Explain about the Event Loop in Node.js
+>## Explain about the Event Loop in Node.js
 - When you read from a file, the calling thread blocks
 - When you read from a network stream, the calling thread blocks
 - Basically, when you do any IO, the calling thread block until the IO operation is done
@@ -84,7 +84,7 @@ NPM is a package manager for Node.js with hundreds of thousands of packages, whi
 ![alt tag](http://js-plaul.rhcloud.com/node1/images/eventloop.png)
 In computer science, the event loop, message dispatcher, message loop, message pump, or run loop is a programming construct that waits for and dispatches events or messages in a program. It works by making a request to some internal or external "event provider" (that generally blocks the request until an event has arrived), and then it calls the relevant event handler ("dispatches the event")
 
-## Explain (some) of the purposes with the tools Babel and WebPack, using  examples from the exercises
+>## Explain (some) of the purposes with the tools Babel and WebPack, using  examples from the exercises
 - Babel is essentially an ECMAScript 6 to ECMAScript 5 compiler. It allows you to use ES6 features in your projects and then compiles ES5 for you to use in production.
 
 - Webpack is a bundler for modules. The main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.
@@ -165,7 +165,7 @@ After running this command(Webpack -p), all our bundles will be minified, as you
 !function(e){function t(r){if(n[r])return n[r].exports;var o=n[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,t),o.l=!0,o.exports}var n={};return t.m=e,t.c=n,t.i=function(e){return e},t.d=function(e,n,r){t.o(e,n)||Object.defineProperty(e,n,{configurable:!1,enumerable:!0,get:r})},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},t.p="",t(t.s=4)}([function(e,t,n){var r=n(1);"string"==typeof r&&(r=[[e.i,r,""]]);n(3)(r,{});r.locals&&(e.exports=r.locals)},function(e,t,n){t=e.exports=n(2)(),t.push([e.i,"h1{color:red}",""])},function(e,t){e.exports=function(){var e=[];return e.toString=function(){for(var e=[],t=0;t<this.length;t++){var n=this[t];n[2]?e.push("@media "+n[2]+"{"+n[1]+"}"):e.push(n[1])}return e.join("")},e.i=function(t,n){"string"==typeof t&&(t=[[null,t,""]]);for(var r={},o=0;o<this.length;o++){var i=this[o][0];"number"==typeof i&&(r[i]=!0)}for(o=0;o<t.length;o++){var s=t[o];"number"==typeof s[0]&&r[s[0]]||(n&&!s[2]?s[2]=n:n&&(s[2]="("+s[2]+") and ("+n+")"),e.push(s))}},e}},function(e,t){function n(e,t){for(var n=0;n<e.length;n++){var r=e[n],o=p[r.id];if(o){o.refs++;for(var i=0;i<o.parts.length;i++)o.parts[i](r.parts[i]);for(;i<r.parts.length;i++)o.parts.push(a(r.parts[i],t))}else{for(var s=[],i=0;i<r.parts.length;i++)s.push(a(r.parts[i],t));p[r.id]={id:r.id,refs:1,parts:s}}}}function r(e){for(var t=[],n={},r=0;r<e.length;r++){var o=e[r],i=o[0],s=o[1],u=o[2],a=o[3],f={css:s,media:u,sourceMap:a};n[i]?n[i].parts.push(f):t.push(n[i]={id:i,parts:[f]})}return t}function o(e,t){var n=v(),r=g[g.length-1];if("top"===e.insertAt)r?r.nextSibling?n.insertBefore(t,r.nextSibling):n.appendChild(t):n.insertBefore(t,n.firstChild),g.push(t);else{if("bottom"!==e.insertAt)throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");n.appendChild(t)}}function i(e){e.parentNode.removeChild(e);var t=g.indexOf(e);t>=0&&g.splice(t,1)}function s(e){var t=document.createElement("style");return t.type="text/css",o(e,t),t}function u(e){var t=document.createElement("link");return t.rel="stylesheet",o(e,t),t}function a(e,t){var n,r,o;if(t.singleton){var a=m++;n=b||(b=s(t)),r=f.bind(null,n,a,!1),o=f.bind(null,n,a,!0)}else e.sourceMap&&"function"==typeof URL&&"function"==typeof URL.createObjectURL&&"function"==typeof URL.revokeObjectURL&&"function"==typeof Blob&&"function"==typeof btoa?(n=u(t),r=l.bind(null,n),o=function(){i(n),n.href&&URL.revokeObjectURL(n.href)}):(n=s(t),r=c.bind(null,n),o=function(){i(n)});return r(e),function(t){if(t){if(t.css===e.css&&t.media===e.media&&t.sourceMap===e.sourceMap)return;r(e=t)}else o()}}function f(e,t,n,r){var o=n?"":r.css;if(e.styleSheet)e.styleSheet.cssText=y(t,o);else{var i=document.createTextNode(o),s=e.childNodes;s[t]&&e.removeChild(s[t]),s.length?e.insertBefore(i,s[t]):e.appendChild(i)}}function c(e,t){var n=t.css,r=t.media;if(r&&e.setAttribute("media",r),e.styleSheet)e.styleSheet.cssText=n;else{for(;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(document.createTextNode(n))}}function l(e,t){var n=t.css,r=t.sourceMap;r&&(n+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(r))))+" */");var o=new Blob([n],{type:"text/css"}),i=e.href;e.href=URL.createObjectURL(o),i&&URL.revokeObjectURL(i)}var p={},d=function(e){var t;return function(){return"undefined"==typeof t&&(t=e.apply(this,arguments)),t}},h=d(function(){return/msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase())}),v=d(function(){return document.head||document.getElementsByTagName("head")[0]}),b=null,m=0,g=[];e.exports=function(e,t){if("undefined"!=typeof DEBUG&&DEBUG&&"object"!=typeof document)throw new Error("The style-loader cannot be used in a non-browser environment");t=t||{},"undefined"==typeof t.singleton&&(t.singleton=h()),"undefined"==typeof t.insertAt&&(t.insertAt="bottom");var o=r(e);return n(o,t),function(e){for(var i=[],s=0;s<o.length;s++){var u=o[s],a=p[u.id];a.refs--,i.push(a)}if(e){var f=r(e);n(f,t)}for(var s=0;s<i.length;s++){var a=i[s];if(0===a.refs){for(var c=0;c<a.parts.length;c++)a.parts[c]();delete p[a.id]}}}};var y=function(){var e=[];return function(t,n){return e[t]=n,e.filter(Boolean).join("\n")}}()},function(e,t,n){n(0)}]);
 ```
 
-## Explain the purpose of: "use strict":
+>## Explain the purpose of: "use strict":
 Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a "strict" operating context. This strict context prevents certain actions from being taken and throws more exceptions.
 Strict mode helps out in a couple ways:
 
@@ -195,7 +195,7 @@ You can use it in a specific function scope:
 ```
 
 # Explain using sufficient code examples the following features in JavaScript.
-## Variable/function-Hoisting
+>## Variable/function-Hoisting
 At runtime the compiler will move variable declarations and function declarations to the top of the document.
 
 #### Example 1:
@@ -223,7 +223,7 @@ foo();  // TypeError: undefined is not a function
 foo = function () {};
 ```
 
-## `this` in JavaScript and how it differs from what we know from Java/.net.
+>## `this` in JavaScript and how it differs from what we know from Java/.net.
 A function's `this` keyword behaves a little differently in JavaScript compared to other languages.
 In most cases, the value of this is determined by how a function is called. It can't be set by assignment during execution, and it may be different each time the function is called.
 
@@ -239,7 +239,7 @@ this.a = 37;
 console.log(window.a); // 37
 ```
 
-## Function Closures and the JavaScript Module Pattern
+>## Function Closures and the JavaScript Module Pattern
 When using function closures, the idea is often to make a function available inside a particular scope only.
 
 #### Example (Closure):
@@ -270,7 +270,7 @@ Here we create a module that can return a greet to a certain person with the `gr
     console.log(greeter("Emil").greet());
 ```
 
-## Immediately-Invoked Function Expressions (IIFE)
+>## Immediately-Invoked Function Expressions (IIFE)
 An immediately invoked function is a function that is called immediately after it is declared.
 
 #### Example 1:
@@ -284,7 +284,7 @@ WordPress disables the use of `$` for sequrity reasons when working with jQuery.
 ```
 You can also use it as a shorter way of writing consolidated code, and immediately executing it.
 
-## JavaScript Prototyping
+>## JavaScript Prototyping
 Every JavaScript object has a prototype. The prototype is also an object. All JavaScript objects inherit their properties and methods from their prototype.
 
 #### Example (Creating a prototype):
@@ -300,7 +300,7 @@ Every JavaScript object has a prototype. The prototype is also an object. All Ja
   var person3 = new Person("Master", "Yoda", 900);
 ```
 
-## User defined callback functions
+>## User defined callback functions
 In JavaScript, functions are first-class objects; that is, functions are of the type Object and they can be used in a first-class manner like any other object (String, Array, Number, etc.) since they are in fact objects themselves. They can be stored in variables, passed as arguments to functions, created within functions, and returned from functions.
 
 #### Example 1 (Filter):
@@ -341,7 +341,7 @@ Creates a new array with the values modified by the callback function
   })(names);
 ```
 
-## E.
+>## E.
 The E property returns the Euler's number and the base of natural logarithms, approximately 2.718.
 ```
 <html>
@@ -370,7 +370,7 @@ Try it <-- button
 2.718281828459045
 ```
 
-## Provide examples of user defined reusable modules implemented in Node.js
+>## Provide examples of user defined reusable modules implemented in Node.js
 person.js
 
 This creates a reusable module for a person.
@@ -405,7 +405,7 @@ Here you use the reusable module in main.js
 ```
 
 # es2005 -->
-## Provide examples and explain the es2005 features: let, arrow functions, this, rest parameters, de-structuring assignments, maps/sets etc.
+>## Provide examples and explain the es2005 features: let, arrow functions, this, rest parameters, de-structuring assignments, maps/sets etc.
 ### Let
 - let allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used. This is unlike the var keyword, which defines a variable globally, or locally to an entire function regardless of block scope.
 - Variables declared by let have as their scope the block in which they are defined, as well as in any contained sub-blocks . In this way, let works very much like var. The main difference is that the scope of a var variable is the entire enclosing function.<br /><br />
@@ -562,7 +562,7 @@ myMap.get({});           // undefined, because keyObj !== {}
 myMap.get(function() {}) // undefined, because keyFunc !== function () {}
 ```
 
-## Explain and demonstrate how es2015 supports modules (import and export) similar to what is offered by NodeJS.
+>## Explain and demonstrate how es2015 supports modules (import and export) similar to what is offered by NodeJS.
 - Javascript did not use to have built-in modules but the javascript community came up with work-arounds which made it possible to get modules.
 - two of these work-around standards are commonJS modules with node.js modules as implementation and Asynchronous Module Definition (AMD) with requireJS as implementation. 
 - commonJS(Node.js) makes it possible to compact syntax, it is designed for synchronous loading and where it's main use is on the server.
@@ -589,7 +589,7 @@ Import.
     console.log(diag(4, 3)); // 5
 ```
 
-## Provide an example of ES6 inheritance and reflect over the differences between Inheritance in Java and in ES6.
+>## Provide an example of ES6 inheritance and reflect over the differences between Inheritance in Java and in ES6.
 - OO keywords is probably the most awaited features in ES6. Classes are something like another syntactic sugar over the prototype-based OO pattern. We now have one, concise way to make class patterns easier to use.<br/>
 
 ES6 inheritance example:<br />
@@ -625,7 +625,7 @@ class Circle extends Shape {
 Here is a clear example on how to inherit from another class.<br />
 In my opinion it looks really similar to how you inherit in java, aka. the extends parents class.<br />
 
-## Provide examples with es6, running in a browser, using Babel and Webpack
+>## Provide examples with es6, running in a browser, using Babel and Webpack
 - Svaret på denne opgave kan ses i src mappen hvilket er angular-webpack opgaven.
 
 
