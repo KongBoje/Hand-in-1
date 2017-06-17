@@ -282,6 +282,18 @@ WordPress disables the use of `$` for sequrity reasons when working with jQuery.
   
 })(jQuery);
 ```
+
+A common way to implement IIFE's is to enclose both the function expression and invocation in parentheses.
+
+it also protects against polluting the global environment.
+```javascript
+(function(){
+  var txt = "Hello World";
+  console.log(txt);  //OK
+})();
+
+console.log(txt);  //Throws an error
+```
 You can also use it as a shorter way of writing consolidated code, and immediately executing it.
 
 >## JavaScript Prototyping
