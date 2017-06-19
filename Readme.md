@@ -242,6 +242,19 @@ this.a = 37;
 console.log(window.a); // 37
 ```
 
+#### Example 2 (Shadowing this):
+```javascript
+function Car(make,model) {
+  this.make = make;
+  this.model = model;
+  this.show = function(){setTimeout(function(){ //This function gets it's own "this"
+    console.log(this.make + ", " + this.model);
+  },0)};
+}
+var car = new Car("Volvo","V70");
+car.show(); //undefined, undefined
+```
+
 >## Function Closures and the JavaScript Module Pattern
 When using function closures, the idea is often to make a function available inside a particular scope only.
 
