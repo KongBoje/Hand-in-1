@@ -23,6 +23,55 @@ Both of the languages have their constructors with a capital letter.
 - Java uses block-based scoping; JavaScript uses function-based scoping like callbacks.
 - Java has an implicit this scope for non-static methods, and implicit class scope; JavaScript has implicit global scope.
 
+In Java we can have variables that points to an object.      
+
+In JavaScript we can have variables that points to a function
+```javascript
+Java:
+A myA = new A();                                                      
+
+javacript:
+var f1 = function(){...}
+```
+In Java we can pass objects as parameters.      
+
+In JavaScript we can pass functions as parameters
+```javascript
+Java:
+someFunction(myA);                                        
+
+javascript:
+someFunction(f1)
+```
+In Java we can return objects from methods.         
+
+In JavaScript we can return functions from functions
+```javascript
+Java:
+A method(){
+  return new A(); 
+}
+
+javascript:
+function someFunction(){
+ return function() {...};
+}
+```
+In Java we can have nested classes.
+
+In JavaScript we can have nested functions
+```javascript
+Java:
+class A {
+ class Inner { .. } 
+}
+
+javascript:
+function someFunction(){
+ function anotherFunction()  {...};
+}
+```
+
 >## Explain the two strategies for improving JavaScript: ES6 (es2015) + ES7, versus Typescript.
 ### JavaScript: ES6(es2015) + ES7:
 - The natural evolution of JavaScript, bringing features like arrow functions, Classes and Inheritance, promises, Generators and much more.
