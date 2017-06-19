@@ -94,6 +94,9 @@ good Webpack notes<br />
 - Dependencies are resolved during compilation, reducing the runtime size.
 - Loaders can preprocess files while compiling, e.g. TypeScript to JavaScript, Handlebars strings to compiled functions, images to Base64, etc.
 - Highly modular plugin system to do whatever else your application requires.
+- we bundle all files into one big file (or a couple files) in order to reduce the number of requests. 
+Another common approach to speed up the bundling operation is to “minify” the bundled code. 
+Minification is the process of removing unnecessary characters from source code (those only meant for humans).
 
 ### Examples
 index.html<br />
